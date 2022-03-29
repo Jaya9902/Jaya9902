@@ -1,10 +1,18 @@
-- 👋 Hi, I’m @Jaya9902
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+Week 1 by AJ Jong
+#R_week01
+#get familiar with R and RStudio
+#intalling a package
+iris
+plot(iris)
+plot(iris$Sepal.Length, iris$Sepal.Width)
+hist(iris$Sepal.Length)
 
-<!---
-Jaya9902/Jaya9902 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+#install.packages("ggplot2")
+library(ggplot2)
+
+# dataset:
+data=data.frame(value=rnorm(100))
+data=data.frame(value=iris$Sepal.Length)
+# basic histogram
+ggplot(data, aes(x=value)) + 
+  geom_histogram()
